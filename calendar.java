@@ -1,4 +1,5 @@
 import java.text.SimpleDateFormat;
+import java.util.Calendar;
 import java.util.Date;
 
 public class calendar {
@@ -21,4 +22,41 @@ public class calendar {
         return brazilDateTime;
     }
 
+    public static int lastDayOfMonth(int year,int month) {
+        Calendar instance = Calendar.getInstance();
+        instance.set(Calendar.YEAR, year);
+        instance.set(Calendar.MONTH, month);
+        instance.set(Calendar.DAY_OF_MONTH, instance.getActualMaximum(Calendar.DAY_OF_MONTH));
+
+        return Integer.parseInt(new SimpleDateFormat("dd").format(instance.getTime()));
+    }
+
+    public static String dayOfTheWeekOfTheFirstDayOfTheMonth(int year,int month) {
+        Calendar instance = Calendar.getInstance();
+        instance.set(Calendar.YEAR, year);
+        instance.set(Calendar.MONTH, month);
+        instance.set(Calendar.DAY_OF_MONTH, instance.getActualMinimum(Calendar.DAY_OF_MONTH));
+
+        return new SimpleDateFormat("EEEE").format(instance.getTime());
+    }
+
+    public static int stringDayOfWeektoInt(String dayOfWeek) {
+        switch (dayOfWeek){
+            case "domingo":
+                return 1;
+            case "segunda-feira":
+                return 2;
+            case "terça-feira":
+                return 3;
+            case "quarta-feira":
+                return 4;
+            case "quinta-feira":
+                return 5;
+            case "sexta-feira":
+                return 6;
+            case "sabado":
+                return 7;
+        }
+        return 0;
+    }
 }

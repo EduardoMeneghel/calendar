@@ -15,7 +15,6 @@ public class alarm {
         audio.loop(looping);
 
         looping = JOptionPane.showInternalConfirmDialog(null, message);
-        System.out.print(looping);
         if (looping > -1){
             audio.stop();
         }

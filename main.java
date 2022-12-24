@@ -6,6 +6,7 @@ import javax.sound.sampled.UnsupportedAudioFileException;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JTextPane;
 import javax.swing.SwingConstants;
@@ -17,8 +18,21 @@ public class main {
         String salutation = calendar.salutation();
         String brazilDateTime = calendar.brazilDateTime();
     
-        alarm.getAlarm("Falar com pedro");
+        //alarm.getAlarm("Falar com pedro");
+
+        String[] value = {"INDEX-0", "", "", "","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","",""};
         
+        String stringDayOfTheWeek = calendar.dayOfTheWeekOfTheFirstDayOfTheMonth(2022, 11);
+        int intDayOfTheWeek = calendar.stringDayOfWeektoInt(stringDayOfTheWeek);
+        int lastDayOfMonth = calendar.lastDayOfMonth(2022, 11);
+
+        for(int i = 0; i <= lastDayOfMonth; i++){
+            System.out.println(intDayOfTheWeek+(i-1));
+            if(intDayOfTheWeek <= intDayOfTheWeek+(i-1)){
+                value[intDayOfTheWeek+(i-1)] = ""+i+"";
+            }
+        }
+
         JFrame calendarWindow = new JFrame("Calendário - " + brazilDateTime);
         calendarWindow.setSize(1280,720); 
 
@@ -87,37 +101,37 @@ public class main {
         space1.setPreferredSize(new Dimension(1280, 0));
 
         JButton element1 = new JButton();
-        element1.setText("");
+        element1.setText(value[1]);
         element1.setPreferredSize(new Dimension(100, 50));
         element1.setHorizontalAlignment(SwingConstants.CENTER);
 
         JButton element2 = new JButton();
-        element2.setText("");
+        element2.setText(value[2]);
         element2.setPreferredSize(new Dimension(100, 50));
         element2.setHorizontalAlignment(SwingConstants.CENTER);
 
         JButton element3 = new JButton();
-        element3.setText("");
+        element3.setText(value[3]);
         element3.setPreferredSize(new Dimension(100, 50));
         element3.setHorizontalAlignment(SwingConstants.CENTER);
 
         JButton element4 = new JButton();
-        element4.setText("");
+        element4.setText(value[4]);
         element4.setPreferredSize(new Dimension(100, 50));
         element4.setHorizontalAlignment(SwingConstants.CENTER);
 
         JButton element5 = new JButton();
-        element5.setText("");
+        element5.setText(value[5]);
         element5.setPreferredSize(new Dimension(100, 50));
         element5.setHorizontalAlignment(SwingConstants.CENTER);
 
         JButton element6 = new JButton();
-        element6.setText("");
+        element6.setText(value[6]);
         element6.setPreferredSize(new Dimension(100, 50));
         element6.setHorizontalAlignment(SwingConstants.CENTER);
 
         JButton element7 = new JButton();
-        element7.setText("");
+        element7.setText(value[7]);
         element7.setPreferredSize(new Dimension(100, 50));
         element7.setHorizontalAlignment(SwingConstants.CENTER);
 
@@ -125,37 +139,37 @@ public class main {
         space2.setPreferredSize(new Dimension(1280, 0));
 
         JButton element8 = new JButton();
-        element8.setText("");
+        element8.setText(value[8]);
         element8.setPreferredSize(new Dimension(100, 50));
         element8.setHorizontalAlignment(SwingConstants.CENTER);
 
         JButton element9 = new JButton();
-        element9.setText("");
+        element9.setText(value[9]);
         element9.setPreferredSize(new Dimension(100, 50));
         element9.setHorizontalAlignment(SwingConstants.CENTER);
 
         JButton element10 = new JButton();
-        element10.setText("");
+        element10.setText(value[10]);
         element10.setPreferredSize(new Dimension(100, 50));
         element10.setHorizontalAlignment(SwingConstants.CENTER);
 
         JButton element11 = new JButton();
-        element11.setText("");
+        element11.setText(value[11]);
         element11.setPreferredSize(new Dimension(100, 50));
         element11.setHorizontalAlignment(SwingConstants.CENTER);
 
         JButton element12 = new JButton();
-        element12.setText("");
+        element12.setText(value[12]);
         element12.setPreferredSize(new Dimension(100, 50));
         element12.setHorizontalAlignment(SwingConstants.CENTER);
 
         JButton element13 = new JButton();
-        element13.setText("");
+        element13.setText(value[13]);
         element13.setPreferredSize(new Dimension(100, 50));
         element13.setHorizontalAlignment(SwingConstants.CENTER);
 
         JButton element14 = new JButton();
-        element14.setText("");
+        element14.setText(value[14]);
         element14.setPreferredSize(new Dimension(100, 50));
         element14.setHorizontalAlignment(SwingConstants.CENTER);
 
@@ -163,37 +177,37 @@ public class main {
         space3.setPreferredSize(new Dimension(1280, 0));
 
         JButton element15 = new JButton();
-        element15.setText("");
+        element15.setText(value[15]);
         element15.setPreferredSize(new Dimension(100, 50));
         element15.setHorizontalAlignment(SwingConstants.CENTER);
 
         JButton element16 = new JButton();
-        element16.setText("");
+        element16.setText(value[16]);
         element16.setPreferredSize(new Dimension(100, 50));
         element16.setHorizontalAlignment(SwingConstants.CENTER);
 
         JButton element17 = new JButton();
-        element17.setText("");
+        element17.setText(value[17]);
         element17.setPreferredSize(new Dimension(100, 50));
         element17.setHorizontalAlignment(SwingConstants.CENTER);
 
         JButton element18 = new JButton();
-        element18.setText("");
+        element18.setText(value[18]);
         element18.setPreferredSize(new Dimension(100, 50));
         element18.setHorizontalAlignment(SwingConstants.CENTER);
 
         JButton element19 = new JButton();
-        element19.setText("");
+        element19.setText(value[19]);
         element19.setPreferredSize(new Dimension(100, 50));
         element19.setHorizontalAlignment(SwingConstants.CENTER);
 
         JButton element20 = new JButton();
-        element20.setText("");
+        element20.setText(value[20]);
         element20.setPreferredSize(new Dimension(100, 50));
         element20.setHorizontalAlignment(SwingConstants.CENTER);
 
         JButton element21 = new JButton();
-        element21.setText("");
+        element21.setText(value[21]);
         element21.setPreferredSize(new Dimension(100, 50));
         element21.setHorizontalAlignment(SwingConstants.CENTER);
 
@@ -201,37 +215,37 @@ public class main {
         space4.setPreferredSize(new Dimension(1280, 0));
 
         JButton element22 = new JButton();
-        element22.setText("");
+        element22.setText(value[22]);
         element22.setPreferredSize(new Dimension(100, 50));
         element22.setHorizontalAlignment(SwingConstants.CENTER);
 
         JButton element23 = new JButton();
-        element23.setText("");
+        element23.setText(value[23]);
         element23.setPreferredSize(new Dimension(100, 50));
         element23.setHorizontalAlignment(SwingConstants.CENTER);
 
         JButton element24 = new JButton();
-        element24.setText("");
+        element24.setText(value[24]);
         element24.setPreferredSize(new Dimension(100, 50));
         element24.setHorizontalAlignment(SwingConstants.CENTER);
 
         JButton element25 = new JButton();
-        element25.setText("");
+        element25.setText(value[25]);
         element25.setPreferredSize(new Dimension(100, 50));
         element25.setHorizontalAlignment(SwingConstants.CENTER);
 
         JButton element26 = new JButton();
-        element26.setText("");
+        element26.setText(value[26]);
         element26.setPreferredSize(new Dimension(100, 50));
         element26.setHorizontalAlignment(SwingConstants.CENTER);
 
         JButton element27 = new JButton();
-        element27.setText("");
+        element27.setText(value[27]);
         element27.setPreferredSize(new Dimension(100, 50));
         element27.setHorizontalAlignment(SwingConstants.CENTER);
 
         JButton element28 = new JButton();
-        element28.setText("");
+        element28.setText(value[28]);
         element28.setPreferredSize(new Dimension(100, 50));
         element28.setHorizontalAlignment(SwingConstants.CENTER);
 
@@ -239,37 +253,37 @@ public class main {
         space5.setPreferredSize(new Dimension(1280, 0));
 
         JButton element29 = new JButton();
-        element29.setText("");
+        element29.setText(value[29]);
         element29.setPreferredSize(new Dimension(100, 50));
         element29.setHorizontalAlignment(SwingConstants.CENTER);
 
         JButton element30 = new JButton();
-        element30.setText("");
+        element30.setText(value[30]);
         element30.setPreferredSize(new Dimension(100, 50));
         element30.setHorizontalAlignment(SwingConstants.CENTER);
 
         JButton element31 = new JButton();
-        element31.setText("");
+        element31.setText(value[31]);
         element31.setPreferredSize(new Dimension(100, 50));
         element31.setHorizontalAlignment(SwingConstants.CENTER);
 
         JButton element32 = new JButton();
-        element32.setText("");
+        element32.setText(value[32]);
         element32.setPreferredSize(new Dimension(100, 50));
         element32.setHorizontalAlignment(SwingConstants.CENTER);
 
         JButton element33 = new JButton();
-        element33.setText("");
+        element33.setText(value[33]);
         element33.setPreferredSize(new Dimension(100, 50));
         element33.setHorizontalAlignment(SwingConstants.CENTER);
 
         JButton element34 = new JButton();
-        element34.setText("");
+        element34.setText(value[34]);
         element34.setPreferredSize(new Dimension(100, 50));
         element34.setHorizontalAlignment(SwingConstants.CENTER);
 
         JButton element35 = new JButton();
-        element35.setText("");
+        element35.setText(value[35]);
         element35.setPreferredSize(new Dimension(100, 50));
         element35.setHorizontalAlignment(SwingConstants.CENTER);
 
@@ -277,37 +291,37 @@ public class main {
         space6.setPreferredSize(new Dimension(1280, 0));
 
         JButton element36 = new JButton();
-        element36.setText("");
+        element36.setText(value[36]);
         element36.setPreferredSize(new Dimension(100, 50));
         element36.setHorizontalAlignment(SwingConstants.CENTER);
 
         JButton element37 = new JButton();
-        element37.setText("");
+        element37.setText(value[37]);
         element37.setPreferredSize(new Dimension(100, 50));
         element37.setHorizontalAlignment(SwingConstants.CENTER);
 
         JButton element38 = new JButton();
-        element38.setText("");
+        element38.setText(value[38]);
         element38.setPreferredSize(new Dimension(100, 50));
         element38.setHorizontalAlignment(SwingConstants.CENTER);
 
         JButton element39 = new JButton();
-        element39.setText("");
+        element39.setText(value[39]);
         element39.setPreferredSize(new Dimension(100, 50));
         element39.setHorizontalAlignment(SwingConstants.CENTER);
 
         JButton element40 = new JButton();
-        element40.setText("");
+        element40.setText(value[40]);
         element40.setPreferredSize(new Dimension(100, 50));
         element40.setHorizontalAlignment(SwingConstants.CENTER);
 
         JButton element41 = new JButton();
-        element41.setText("");
+        element41.setText(value[41]);
         element41.setPreferredSize(new Dimension(100, 50));
         element41.setHorizontalAlignment(SwingConstants.CENTER);
 
         JButton element42 = new JButton();
-        element42.setText("");
+        element42.setText(value[42]);
         element42.setPreferredSize(new Dimension(100, 50));
         element42.setHorizontalAlignment(SwingConstants.CENTER);
 
@@ -372,10 +386,12 @@ public class main {
         calendarJPanel.add(element40);
         calendarJPanel.add(element41);
         calendarJPanel.add(element42);
-        
-        
-       
 
         calendarWindow.setVisible(true);
+       
+            calendarJPanel.remove(element42);
+
+        calendarWindow.setVisible(true);
+        
     }
 }

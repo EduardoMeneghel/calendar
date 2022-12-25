@@ -3,6 +3,7 @@ import java.io.IOException;
 
 import javax.sound.sampled.LineUnavailableException;
 import javax.sound.sampled.UnsupportedAudioFileException;
+import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
@@ -41,7 +42,7 @@ public class main {
         
         JLabel greetingsJLabel = new JLabel();
         greetingsJLabel.setText(salutation);
-        greetingsJLabel.setPreferredSize(new Dimension(1280, 50));
+        greetingsJLabel.setPreferredSize(new Dimension(40000, 50));
         greetingsJLabel.setHorizontalAlignment(SwingConstants.CENTER);
 
         JButton back = new JButton();
@@ -60,7 +61,7 @@ public class main {
         next.setHorizontalAlignment(SwingConstants.CENTER);
 
         JTextPane space = new JTextPane();
-        space.setPreferredSize(new Dimension(1280, 0));
+        space.setPreferredSize(new Dimension(40000, 0));
 
         JButton sun = new JButton();
         sun.setText("Sun");
@@ -98,7 +99,7 @@ public class main {
         sat.setHorizontalAlignment(SwingConstants.CENTER);
 
         JTextPane space1 = new JTextPane();
-        space1.setPreferredSize(new Dimension(1280, 0));
+        space1.setPreferredSize(new Dimension(40000, 0));
 
         JButton element1 = new JButton();
         element1.setText(value[1]);
@@ -136,7 +137,7 @@ public class main {
         element7.setHorizontalAlignment(SwingConstants.CENTER);
 
         JTextPane space2 = new JTextPane();
-        space2.setPreferredSize(new Dimension(1280, 0));
+        space2.setPreferredSize(new Dimension(40000, 0));
 
         JButton element8 = new JButton();
         element8.setText(value[8]);
@@ -174,7 +175,7 @@ public class main {
         element14.setHorizontalAlignment(SwingConstants.CENTER);
 
         JTextPane space3 = new JTextPane();
-        space3.setPreferredSize(new Dimension(1280, 0));
+        space3.setPreferredSize(new Dimension(40000, 0));
 
         JButton element15 = new JButton();
         element15.setText(value[15]);
@@ -212,7 +213,7 @@ public class main {
         element21.setHorizontalAlignment(SwingConstants.CENTER);
 
         JTextPane space4 = new JTextPane();
-        space4.setPreferredSize(new Dimension(1280, 0));
+        space4.setPreferredSize(new Dimension(40000, 0));
 
         JButton element22 = new JButton();
         element22.setText(value[22]);
@@ -250,7 +251,7 @@ public class main {
         element28.setHorizontalAlignment(SwingConstants.CENTER);
 
         JTextPane space5 = new JTextPane();
-        space5.setPreferredSize(new Dimension(1280, 0));
+        space5.setPreferredSize(new Dimension(40000, 0));
 
         JButton element29 = new JButton();
         element29.setText(value[29]);
@@ -288,7 +289,7 @@ public class main {
         element35.setHorizontalAlignment(SwingConstants.CENTER);
 
         JTextPane space6 = new JTextPane();
-        space6.setPreferredSize(new Dimension(1280, 0));
+        space6.setPreferredSize(new Dimension(40000, 0));
 
         JButton element36 = new JButton();
         element36.setText(value[36]);
@@ -387,11 +388,8 @@ public class main {
         calendarJPanel.add(element41);
         calendarJPanel.add(element42);
 
-        calendarWindow.setVisible(true);
-       
-            calendarJPanel.remove(element42);
-
-        calendarWindow.setVisible(true);
-        
+        element1 = null;
+        calendarWindow.setVisible(true);    
+        calendar.saveDescription("Salvar descrição", "18-08-2001 - 08:30");
     }
 }

@@ -2,6 +2,9 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 
+import javax.swing.ImageIcon;
+import javax.swing.JOptionPane;
+
 public class calendar {
 
     public static String salutation() {
@@ -58,5 +61,10 @@ public class calendar {
                 return 7;
         }
         return 0;
+    }
+
+    public static String saveDescription(String message, String title) {
+        ImageIcon icon = new ImageIcon("./clock.png");
+        return  (String) JOptionPane.showInputDialog(null,message,title,JOptionPane.INFORMATION_MESSAGE,icon,null,"");
     }
 }
